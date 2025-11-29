@@ -36,9 +36,6 @@ class RichTextEditor(QMainWindow):
         # 创建主布局
         main_layout = QVBoxLayout()
         
-        # 创建格式工具栏
-        self.create_format_toolbar()
-        
         # === 标题区域 ===
         title_layout = QHBoxLayout()
         title_label = QLabel("标题:")
@@ -56,6 +53,9 @@ class RichTextEditor(QMainWindow):
         self.content_edit = QTextEdit()
         self.content_edit.setPlaceholderText("尝试使用上面的工具栏来格式化文字...")
         main_layout.addWidget(self.content_edit)
+        
+        # 创建格式工具栏（必须在 content_edit 创建之后）
+        self.create_format_toolbar()
         
         # === 按钮区域 ===
         button_layout = QHBoxLayout()

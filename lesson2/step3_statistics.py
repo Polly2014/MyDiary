@@ -119,8 +119,10 @@ class StatisticsWidget(QWidget):
     
     def refresh_trend_chart(self):
         """刷新字数趋势图"""
+        import sqlite3
+        
         # 获取最近30天的数据
-        conn = self.db.db.connect(self.db.db_path)
+        conn = sqlite3.connect(self.db.db_path)
         cursor = conn.cursor()
         
         cursor.execute('''

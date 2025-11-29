@@ -20,7 +20,7 @@ MyDiary 最终完整版
 运行方式：
 python main.py
 
-作者：王宝莉
+作者：Polly
 邮箱：baoli.wang@microsoft.com
 """
 
@@ -465,6 +465,7 @@ class MyDiaryApp(QMainWindow):
         mood_label = QLabel("心情:")
         mood_label.setMinimumWidth(60)
         self.mood_combo = QComboBox()
+        self.mood_combo.setMinimumWidth(100)
         for text, value in self.MOODS:
             self.mood_combo.addItem(text, value)
         index = self.mood_combo.findData("neutral")
@@ -598,7 +599,8 @@ class MyDiaryApp(QMainWindow):
         self.size_box = QComboBox()
         self.size_box.addItems(['10', '12', '14', '16', '18', '20', '24', '28'])
         self.size_box.setCurrentText('14')
-        self.size_box.setMaximumWidth(80)
+        self.size_box.setMaximumWidth(120)
+        self.size_box.setMinimumWidth(80)
         self.size_box.currentTextChanged.connect(self.change_size)
         toolbar.addWidget(self.size_box)
         

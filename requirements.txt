@@ -27,6 +27,7 @@ pytest>=7.4.0
 pytest-qt>=4.2.0
 
 # Eric IDE（可选，建议单独安装）
+# https://eric-ide.python-projects.org/eric-download.html
 # eric-ide>=24.11
 # 注意：Eric IDE建议通过系统包管理器或官网单独安装
 # macOS: brew install eric-ide
