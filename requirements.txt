@@ -1,0 +1,27 @@
+# PyQt6 - GUI框架
+PyQt6==6.6.1
+PyQt6-Qt6==6.6.1
+PyQt6-sip==13.6.0
+
+# 数据库
+# SQLite是Python内置的，无需额外安装
+
+# 数据可视化
+matplotlib==3.8.2
+numpy==1.26.2
+
+# 打包工具
+PyInstaller==6.3.0
+
+# 加密工具（可选，用于密码保护）
+cryptography==41.0.7
+
+# 日期时间处理
+python-dateutil==2.8.2
+
+# 开发工具
+pytest==7.4.3
+pytest-qt==4.2.0
+
+# Eric IDE（可选，建议单独安装）
+# eric-ide==23.11
